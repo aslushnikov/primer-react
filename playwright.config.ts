@@ -28,7 +28,11 @@ const config: Config = {
   },
   expect: {
     toHaveScreenshot: {
+      comparator: 'ssim-cie94',
       animations: 'disabled',
+    },
+    toMatchSnapshot: {
+      comparator: 'ssim-cie94',
     },
   },
   reporter: [
